@@ -28,7 +28,7 @@ class AnimeRecommendationPipeline:
         except Exception as e:
             raise CustomException(e, sys)
         
-    def recommend(self, query:str, output:str):
+    def recommend(self, query:str):
         try:
             
             logging.info(f"Recieved the query from the user and the query is {query}")
