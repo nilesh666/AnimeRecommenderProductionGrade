@@ -1,6 +1,6 @@
 from langchain.chains import RetrievalQA
 from langchain_groq import ChatGroq
-from src.propmpt_template import get_anime_prompt
+from src.prompt_template import get_anime_prompt
 
 class AnimeRecommender:
     def __init__(self, retreiver, api_key:str, model_name:str):
